@@ -59,15 +59,16 @@ export default function Features() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: 0.1 * index, duration: 0.5 }}
-              className="p-8 rounded-2xl bg-cream flex flex-col gap-6"
+              whileHover={{ scale: 1.03, y: -5 }}
+              transition={{ delay: 0.1 * index, duration: 0.4 }}
+              className="p-8 rounded-2xl bg-cream flex flex-col gap-6 hover:shadow-xl hover:bg-white border border-transparent hover:border-primary/20 transition-all duration-300"
             >
               <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center shadow-sm">
                 <feature.icon className="w-6 h-6 text-primary" />
               </div>
               <div>
                 <h3 className="text-xl font-display font-bold text-navy mb-3">{feature.title}</h3>
-                <p className="text-muted-blue leading-relaxed font-sans">
+                <p className="text-muted-blue leading-relaxed font-sans mt-2">
                   {feature.description}
                 </p>
               </div>

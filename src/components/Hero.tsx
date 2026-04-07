@@ -24,7 +24,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
           className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-navy max-w-4xl mx-auto leading-[1.1] tracking-tight mb-8"
         >
-          Tu camino a la vivienda propia, con respaldo legal experto.
+          Asegura la casa de tus sueños <span className="text-primary">sin sorpresas legales</span>.
         </motion.h1>
 
         <motion.p
@@ -33,7 +33,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           className="text-lg md:text-xl text-muted-blue max-w-2xl mx-auto mb-12 leading-relaxed font-sans"
         >
-          En MEDLA te acompañamos en cada paso del proceso de adquisición de vivienda: desde la revisión documental hasta el cierre legal, con la tranquilidad de tener expertos de tu lado.
+          Auditamos y blindamos todo el proceso de compra de tu inmueble. Protege hoy tu inversión y asegura tu patrimonio con nuestro equipo de abogados especialistas.
         </motion.p>
 
         <motion.div
