@@ -1,46 +1,45 @@
 import { motion } from 'motion/react';
-import { PiggyBank, Home, LineChart, Umbrella, ShieldCheck } from 'lucide-react';
 
 export default function Features() {
   const features = [
     {
-      title: 'Ahorro',
-      description: 'Planificación estratégica del ahorro adaptada a cada etapa vital y objetivo financiero. Estructuramos soluciones a corto, medio y largo plazo para construir un patrimonio sólido.',
-      icon: PiggyBank,
+      title: 'Ahorro a corto, medio y largo plazo',
+      description: 'planificación estratégica del ahorro adaptada a cada etapa vital y a cada objetivo financiero estructurando soluciones a corto, medio y largo plazo que permitan construir un patrimonio sólido con una visión ordenada y eficiente del futuro financiero.',
+      image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     },
     {
-      title: 'Hipotecas',
-      description: 'Diseño y gestión de soluciones hipotecarias para residentes y no residentes. Acompañamiento integral, desde nuevas contrataciones hasta mejora de condiciones y amortización.',
-      icon: Home,
+      title: 'Hipotecas residente y no residente',
+      description: 'diseño y gestión de soluciones hipotecarias personalizadas para residentes y no residentes con acompañamiento integral en todo el ciclo hipotecario desde la contratación de nuevas hipotecas hasta la subrogación para la mejora de las hipotecas existentes y amortización anticipada, negociando con las entidades financieras las mejores condiciones del mercado en cada momento.',
+      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     },
     {
       title: 'Inversión',
-      description: 'Estrategias de inversión personalizadas según el perfil de riesgo y objetivos. Acceso a productos diversificados para hacer crecer el patrimonio de forma eficiente.',
-      icon: LineChart,
+      description: 'diseño de estrategias de inversión personalizadas en función del perfil de riesgo, horizonte temporal y objetivos financieros del cliente. Acceso a productos financieros diversificados para hacer crecer el patrimonio de forma eficiente.',
+      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     },
     {
-      title: 'Planes de Pensiones',
-      description: 'Optimización de su jubilación. Análisis de planes, traspasos y mejora de rentabilidad y eficiencia fiscal, alineando la estrategia con sus objetivos de retiro.',
-      icon: Umbrella,
+      title: 'Planes de pensiones',
+      description: 'optimización de la planificación de la jubilación mediante el análisis de planes existentes, la realización de traspasos entre entidades y la mejora de la rentabilidad y eficiencia fiscal alineando la estrategia de pensiones con los objetivos de retiro del cliente.',
+      image: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     },
     {
       title: 'Seguros',
-      description: 'Programas de protección personal, ingresos y patrimonio. Asesoramiento en vida, baja laboral, responsabilidad civil, hogar y salud, garantizando su tranquilidad.',
-      icon: ShieldCheck,
+      description: 'diseño de programas de protección personalizados orientados a la protección personal, la protección de ingresos y la protección patrimonial mediante el asesoramiento integral en todos los ramos de seguros incluyendo vida, baja laboral, responsabilidad civil, hogar, salud y otros garantizando la tranquilidad financiera del cliente y su entorno familiar y profesional.',
+      image: "https://images.unsplash.com/photo-1450101499163-c8848c66cb85?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     },
   ];
 
   return (
-    <section id="servicios" className="py-20 md:py-32 bg-white">
+    <section id="servicios" className="py-20 md:py-32 bg-cream">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mb-16">
+        <div className="max-w-3xl mb-24 text-center mx-auto">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="text-sm font-bold text-primary tracking-widest uppercase mb-4 font-sans"
           >
-            SERVICIOS OBV
+            NUESTROS SERVICIOS OBV
           </motion.p>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -49,36 +48,39 @@ export default function Features() {
             transition={{ delay: 0.1 }}
             className="text-3xl md:text-5xl font-display font-bold text-navy mb-6"
           >
-            Todo lo que necesitas para comprar con seguridad
+            Servicios Financieros y Patrimoniales Integrales
           </motion.h2>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-            className="text-lg text-muted-blue leading-relaxed font-sans"
-          >
-            El servicio OBV de MEDLA reúne en un solo despacho la asesoría legal, fiscal e inmobiliaria que necesitas para adquirir tu vivienda sin riesgos y con plena confianza.
-          </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="space-y-24">
           {features.map((feature, index) => (
             <motion.div
               key={feature.title}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              whileHover={{ scale: 1.03, y: -5 }}
-              transition={{ delay: 0.1 * index, duration: 0.4 }}
-              className="p-8 rounded-2xl bg-cream flex flex-col gap-6 hover:shadow-xl hover:bg-white border border-transparent hover:border-primary/20 transition-all duration-300"
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6 }}
+              className={`flex flex-col gap-10 lg:gap-16 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'}`}
             >
-              <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center shadow-sm">
-                <feature.icon className="w-6 h-6 text-primary" />
+              {/* Image Side */}
+              <div className="w-full lg:w-1/2">
+                <div className="relative rounded-3xl overflow-hidden aspect-[4/3] shadow-2xl group">
+                  <div className="absolute inset-0 bg-navy/10 group-hover:bg-transparent transition-colors z-10 duration-500" />
+                  <img
+                    src={feature.image}
+                    alt={feature.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
               </div>
-              <div>
-                <h3 className="text-xl font-display font-bold text-navy mb-3">{feature.title}</h3>
-                <p className="text-muted-blue leading-relaxed font-sans mt-2">
+
+              {/* Text Side */}
+              <div className="w-full lg:w-1/2 space-y-6">
+                <div className="w-12 h-1 bg-primary rounded-full mb-6" />
+                <h3 className="text-3xl md:text-4xl font-display font-bold text-navy leading-tight">
+                  {feature.title}
+                </h3>
+                <p className="text-lg text-muted-blue leading-relaxed font-sans first-letter:capitalize">
                   {feature.description}
                 </p>
               </div>
