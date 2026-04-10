@@ -1,22 +1,32 @@
 import { motion } from 'motion/react';
-import { FileSearch, ShieldCheck, Users } from 'lucide-react';
+import { PiggyBank, Home, LineChart, Umbrella, ShieldCheck } from 'lucide-react';
 
 export default function Features() {
   const features = [
     {
-      title: 'Revisión Legal Completa',
-      description: 'Analizamos contratos, escrituras y situación registral de la propiedad para que adquieras con total certeza jurídica y sin sorpresas.',
-      icon: FileSearch,
+      title: 'Ahorro',
+      description: 'Planificación estratégica del ahorro adaptada a cada etapa vital y objetivo financiero. Estructuramos soluciones a corto, medio y largo plazo para construir un patrimonio sólido.',
+      icon: PiggyBank,
     },
     {
-      title: 'Protección de tus Derechos',
-      description: 'Nuestros abogados velan por tus intereses en cada negociación, garantizando condiciones justas y el cumplimiento de todas las obligaciones legales.',
+      title: 'Hipotecas',
+      description: 'Diseño y gestión de soluciones hipotecarias para residentes y no residentes. Acompañamiento integral, desde nuevas contrataciones hasta mejora de condiciones y amortización.',
+      icon: Home,
+    },
+    {
+      title: 'Inversión',
+      description: 'Estrategias de inversión personalizadas según el perfil de riesgo y objetivos. Acceso a productos diversificados para hacer crecer el patrimonio de forma eficiente.',
+      icon: LineChart,
+    },
+    {
+      title: 'Planes de Pensiones',
+      description: 'Optimización de su jubilación. Análisis de planes, traspasos y mejora de rentabilidad y eficiencia fiscal, alineando la estrategia con sus objetivos de retiro.',
+      icon: Umbrella,
+    },
+    {
+      title: 'Seguros',
+      description: 'Programas de protección personal, ingresos y patrimonio. Asesoramiento en vida, baja laboral, responsabilidad civil, hogar y salud, garantizando su tranquilidad.',
       icon: ShieldCheck,
-    },
-    {
-      title: 'Acompañamiento Integral',
-      description: 'Te guiamos desde la búsqueda del inmueble hasta la firma ante notario, coordinando con bancos, vendedores y autoridades en tu nombre.',
-      icon: Users,
     },
   ];
 
